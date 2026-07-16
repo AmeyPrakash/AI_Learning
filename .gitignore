@@ -9,6 +9,8 @@ wheels/
 # Virtual Environment
 .venv/
 **/.venv/
+.uv-cache/
+**/.uv-cache/
 
 # Environment Variables
 .env
