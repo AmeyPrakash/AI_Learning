@@ -32,15 +32,15 @@ pip install groq python-dotenv
 
 ### 2. Configure API Key
 
-Create a `.env` file in the parent directory (`AI_Learning/`) with your Groq API key:
+Create a `.env` file in `AI_Learning/` or in any parent folder above this script with your Groq API key:
 
 ```
 GROQ_API_KEY=your_api_key_here
 ```
 
-**Note:** The script looks for the `.env` file at `AI_Learning/.env` using:
+**Note:** The script walks upward from `week1/day5/Grammar_checker` until it finds a `.env` file.
 ```python
-load_dotenv(Path(__file__).resolve().parent.parent / ".env")
+load_project_env()
 ```
 
 ### 3. Run the Script

@@ -1,4 +1,4 @@
-from resume_parser import main
+from grammar_checker import main
 
 
 if __name__ == "__main__":
